@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styles</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#t1").click(function () {
+                $("#b1").toggle();
+            });
+        });
+    </script>
+
+  
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>
+            <button id="t1">REGISTRATION FORM</button>
+        </legend>
+        <!--<p>REGISTRATION FORM</p>-->
+        <!-- <img src="assests\CGVAK.png" alt="CGVAK" height="100px" width="100px"> -->
+
+        <div>
+
+            <form id="b1">
+
+                <label>FIRSTNAME</label>
+                <input type="text" id="t1" /><br>
+                <br>
+                <label>LASTNAME</label>
+                <input type="text" /><br>
+                <br>
+                <label>EMAIL</label>
+                <input type="email" id="t2" /><br>
+                <br>
+                <label>USERNAME</label>
+                <input type="text" id="t3" /><br>
+                <br>
+                <label>PASSWORD</label>
+                <input type="password" id="t4" /><br>
+                <br>
+                <label>GENDER</label><br>
+                <input type="radio" id="gender" name="gender" value="Female">Female<br>
+                <input type="radio" id="gender" name="gender" value="Male">Male<br>
+                <br>
+                <label>ADDRESS</label><br>
+                <textarea></textarea><br>
+                <br>
+                <input type="date">DATE OF BIRTH<br><br>
+                <br>
+                <label>MOBILE NUMBER</label>
+                <input type="tel" pattern="[0-9]{10}"><br>
+                <br>
+                <br>
+                <label>TELEPHONE NUMBER</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"><br>
+                <br>
+                <br>
+                <label>SELECT PROFESSION</label><br>
+                <select name="PROFESSION">
+                    <optgroup label="DEVELOPER">
+                        <option>FRONTEND</option>
+                        <option>BACKEND</option>
+                        <option>FULL STACK</option>
+                    </optgroup>
+                    <br>
+                    <br>
+                    <input type="submit" name="submit" value="SUBMIT"> 
+                 
+
+    </fieldset>
+
+    </form>
+
+    </div>
+
+
+</body>
+
+</html>
