@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body{
+            background-color: rgb(137, 201, 201);
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function ()  {
+          $("#t1").hover(function ()  {
+        $(this).animate({ 'zoom': 12.2 }, 400);
+        $("body").css("background-color", "yellow");
+      });
+    });
+        });
+      </script>
+</head>
+<body>
+    <button id="b1">Start Animation</button>
+   <div id="b1">
+        
+            <img src="assets\mv.jpg" width="100px" height="100px" id="t1" style="position: relative;"/>
+        </div>
+    
+</body>
+</html>

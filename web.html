@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/dark-hive/jquery-ui.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion({
+                collapsible: true
+
+
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#add").click(function () {
+                $("#p1").append("id=p1");
+            });
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+    <div id="accordion">
+        <button>tab 1</button>
+
+
+
+        <div>
+            <img src="assets\mobile1.jpg" width="70px" height="100px" id="t1" style="position: relative;" />
+            <img src="assets\mobile2.jpg" width="100px" height="100px" id="t1" style="position: relative;" />
+            <button id="add">add</button>
+            <img src="assets/lap1.jpg" width="100px" height="100px" id="p1" style="position: relative;" />
+        </div>
+
+        <button>tab 2</button>
+        <div>
+            <img src="assets/lap1.jpg" width="100px" height="100px" id="t1" style="position: relative;" />
+            <img src="assets/lap2.jpg" width="100px" height="100px" id="t1" style="position: relative;" />
+        </div>
+    </div>
+</body>
+
+</html>
