@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    
+    <title>Document</title>
+
+    <script>
+
+        $(function() {
+            var autocom = [
+                "mobilephones",
+                "laptop",
+                "charger",
+                "cable",
+                "phonecase",
+                "headphone",
+                "lapcharger",
+                "keyboard",
+                "monitor",
+                "mouse"
+                
+            ];
+
+            $("#AUTO").autocomplete
+                ({
+                    source:autocom,
+                    autoFocus: true,
+                    minLength: 3,
+                    delay:2000,
+                });
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1> AUTO COMPLETE</h1>
+    <div class = "ui-widget">
+    <label for="AUTO">ENTER A PRODUCT NAME: </label>
+    <input id="AUTO">
+    </div>
+</body>
+
+</body>
+
+</html>
